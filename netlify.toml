@@ -1,0 +1,6 @@
+[build]
+  # The app lives at the repository root, not in a subdirectory
+  base = "/"
+  # Install dependencies first so tsc/vite are available even when node_modules is absent
+  command = "npm install --include=dev && npm run build"
+  publish = "dist"
